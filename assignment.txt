@@ -1,0 +1,31 @@
+use assignment
+db.help()
+ db.users.insert({first_name: "Abhijeet", last_name: "Kumar", email: "akc972527@gmail.com", gender: "Male", ip_address: "123.456.7890", age: "25"})
+db.find()
+{ "_id" : ObjectId("61a749f87c9816134fbbc0ae"), "first_name" : "Abhijeet", "last_name" : "Kumar", "email" : "akc972527@gmail.com", "gender" : "Male", "ip_address" : "123.456.7890", "age" : "25" }
+db.user.insertMany([{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},{first_name:"Ellary",last_name:"Rapps",email:"erapps1@forbes.com",gender:"Male",ip_address:"56.192.41.223",age:45},])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61a74b9c7c9816134fbbc0af"),
+                ObjectId("61a74b9c7c9816134fbbc0b0"),
+                ObjectId("61a74b9c7c9816134fbbc0b1"),
+                ObjectId("61a74b9c7c9816134fbbc0b2"),
+                ObjectId("61a74b9c7c9816134fbbc0b3"),
+                ObjectId("61a74b9c7c9816134fbbc0b4"),
+                ObjectId("61a74b9c7c9816134fbbc0b5"),
+                ObjectId("61a74b9c7c9816134fbbc0b6"),
+                ObjectId("61a74b9c7c9816134fbbc0b7"),
+                ObjectId("61a74b9c7c9816134fbbc0b8")
+        ]
+}
+db.users.find().pretty()
+{
+        "_id" : ObjectId("61a749f87c9816134fbbc0ae"),
+        "first_name" : "Abhijeet",
+        "last_name" : "Kumar",
+        "email" : "akc972527@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "123.456.7890",
+        "age" : "25"
+}
